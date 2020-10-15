@@ -1,0 +1,90 @@
+.rab-leg {
+  padding: 73px 0 170px;
+  background: url(../images/hero-bg.png) no-repeat 80% 100%;
+
+  @include maxLg() {
+    padding: 73px 0 80px;
+    background: url(../images/hero-bg.png) no-repeat 80% 100% / contain;
+  }
+
+  &__title {
+    margin-top: 60px;
+    font-size: 45px;
+    color: #e50000;
+    line-height: 1.22;
+    max-width: 700px;
+    font-weight: 400;
+
+    @include maxLg() {
+      font-size: 25px;
+    }
+  }
+
+  &__desc {
+    font-size: 22px;
+    line-height: 1.18;
+    margin-top: 23px;
+    margin-bottom: 58px;
+    font-weight: 400;
+    max-width: 600px;
+
+    @include maxLg() {
+      font-size: 18px;
+    }
+  }
+
+  &__search {
+    width: 100%;
+    max-width: 772px;
+    height: 45px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+
+    input {
+      width: 100%;
+      height: 100%;
+      font-size: 20px;
+      border: 1px solid #c3bdba;
+      outline: none;
+      border-radius: 5px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      padding-left: 10px;
+      padding-right: 20px;
+      color: #908b89;
+    }
+
+    button {
+      border-radius: 5px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      width: 182px;
+      background-color: #d0021b;
+      height: 100%;
+      font-size: 18px;
+      color: #fff;
+    }
+  }
+
+  .nav-menu {
+    .def-link {
+      margin-left: 25px;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    @include maxMd() {
+      margin-top: 40px;
+    }
+  }
+
+  .logoEka {
+    width: 120px;
+  }
+}

@@ -1,0 +1,39 @@
+.helper {
+  padding: 40px 0;
+
+  .mcfr-title {
+    margin-bottom: 70px;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 40px;
+
+    &--dost {
+      margin-top: 50px;
+      margin-bottom: 0px;
+    }
+  }
+
+  .advice__elem {
+    margin-bottom: 36px;
+  }
+
+  .advice__title {
+    font-size: 22px;
+    color: #0278ff;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  .advice__desc {
+    font-size: 18px;
+  }
+
+  .gif {
+    max-width: 350px;
+    float: right;
+  }
+
+  .demo {
+    margin: 20px auto;
+    display: block;
+  }
+}
