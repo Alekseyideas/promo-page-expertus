@@ -70,7 +70,7 @@
 
   .slideRev {
     max-width: 600px;
-    margin: 70px auto 0;
+    margin: 70px auto 40px;
     @include maxSm() {
       width: 80%;
     }
@@ -78,7 +78,7 @@
       font-size: 0;
       width: 40px;
       height: 40px;
-      background: rgba($color: #e50000, $alpha: 0) url('../images/709586.svg')
+      background: rgba($color: #e50000, $alpha: 0) url("../images/709586.svg")
         no-repeat center / contain;
       position: absolute;
       top: 50%;

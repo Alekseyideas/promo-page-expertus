@@ -18,7 +18,7 @@
   }
 
   .site {
-    max-height: 800px;
+    max-height: 1000px;
     overflow: hidden;
     margin-top: 28px;
 
@@ -30,7 +30,7 @@
 
   &__body-1 {
     padding-bottom: 30px;
-    border-bottom: 1px solid #e5e5e5;
+    // border-bottom: 1px solid #e5e5e5;
   }
 
   &__body-2 {
@@ -74,6 +74,4 @@
       border: 0;
     }
   }
-
-
 }

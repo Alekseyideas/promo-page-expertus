@@ -23,6 +23,10 @@ input {
   margin: 0;
 }
 
+a {
+  color: #0278ff;
+}
+
 .mcfr-desc {
   font-size: 21px;
   color: #2d3039;
@@ -68,7 +72,7 @@ input {
 
     @include minLg() {
       &::after {
-        content: '';
+        content: "";
         display: block;
         width: 40px;
         height: 1px;
@@ -118,6 +122,9 @@ img {
   @include maxMd() {
     width: 100%;
   }
+  &:hover {
+    background-color: #b60000;
+  }
 }
 
 .def-link {
@@ -129,7 +136,7 @@ img {
   text-decoration: none;
 
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -5px;
     left: 0;
@@ -141,7 +148,7 @@ img {
     transition: 0.3s;
   }
   &:hover {
-    color: #d0021b;
+    color: #a10013;
 
     &:after {
       opacity: 1;
@@ -155,9 +162,21 @@ img {
 
 .demo,
 .demourl {
-  background: #0278ff;
+  // background: #0278ff;
 
   &:hover {
-    background: #014fa8;
+    // background: #014fa8;
   }
+}
+
+.green {
+  background: #00b126;
+
+  &:hover {
+    background: #007219;
+  }
+}
+
+.bg-grey {
+  background: #f6f6f6;
 }
