@@ -5,7 +5,36 @@ $('document').ready(() => {
     infinite: false,
     arrows: false,
   });
+  const createSlider = (cls) => {
+    $(cls).slick({
+      slidesToShow: 5,
+      infinite: true,
+      arrows: true,
+      centerMode: false,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            // dots: true
+          }
+        },
+      ]
+    });
 
+    if(window.innerWidth > 1100) {
+      $(cls).on('afterChange', function(event, slick, currentSlide, nextSlide){
+        $(`${cls} .slick-slide`).removeClass('slick-active-center');
+        $(`${cls} .slick-active`).eq(2).addClass('slick-active-center');
+      }).trigger('afterChange');
+    }
+    
+  }
+
+  createSlider('#experts-slider');
+  createSlider('#experts-slider2');
+  
   $('a[data-slide]').click(function (e) {
     e.preventDefault();
 
@@ -19,15 +48,19 @@ $('document').ready(() => {
     console.log($('.site img').height());
     switch (+slideno) {
       case 2:
-        return fnGoTOSlide(7220);
+        return fnGoTOSlide(80);
       case 3:
-        return fnGoTOSlide(320);
+        return fnGoTOSlide(180);
       case 4:
-        return fnGoTOSlide(4000);
+        return fnGoTOSlide(700);
       case 5:
-        return fnGoTOSlide(4250);
+        return fnGoTOSlide(820);
       case 6:
-        return fnGoTOSlide(2500);
+        return fnGoTOSlide(1300);
+      case 7:
+        return fnGoTOSlide(3500);
+      case 8:
+        return fnGoTOSlide(3180);
       // return fnGoTOSlide($('.site img').height());
       default:
         return fnGoTOSlide(0);
