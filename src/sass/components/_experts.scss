@@ -8,6 +8,11 @@
     margin-top: 60px;
     // display: flex;
     margin-bottom: 40px;
+
+    @include maxSm() {
+      // width: 66%;
+      // margin: auto;
+    }
   }
   .experts-slider-item {
     // width: 300px !important;
