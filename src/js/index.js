@@ -20,6 +20,16 @@ $('document').ready(() => {
             // dots: true
           }
         },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            autoplay: true,
+
+          }
+        },
       ]
     });
 
@@ -82,5 +92,14 @@ $('document').ready(() => {
   $('.slideRev').slick({
     infinite: true,
     autoplay: true,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          arrows: false,
+
+        }
+      },
+    ]
   });
 });
