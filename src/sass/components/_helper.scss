@@ -27,9 +27,15 @@
     font-size: 18px;
   }
 
+  .absolute {
+    position: absolute;
+    left: 0;
+  }
   .gif {
     max-width: 350px;
     float: right;
+    z-index: 1;
+    position: relative;
   }
 
   .demo {
