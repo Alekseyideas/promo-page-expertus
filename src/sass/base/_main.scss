@@ -72,7 +72,7 @@ a {
 
     @include minLg() {
       &::after {
-        content: "";
+        content: '';
         display: block;
         width: 40px;
         height: 1px;
@@ -136,7 +136,7 @@ img {
   text-decoration: none;
 
   &:after {
-    content: "";
+    content: '';
     position: absolute;
     bottom: -5px;
     left: 0;
@@ -179,4 +179,17 @@ img {
 
 .bg-grey {
   background: #f6f6f6;
+}
+
+#top-companies-slider {
+  .slick-track {
+    display: flex;
+    align-items: center;
+    & > * {
+      text-align: center;
+    }
+    img {
+      max-width: 300px;
+    }
+  }
 }

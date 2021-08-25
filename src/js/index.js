@@ -18,7 +18,7 @@ $('document').ready(() => {
             slidesToShow: 1,
             slidesToScroll: 1,
             // dots: true
-          }
+          },
         },
         {
           breakpoint: 600,
@@ -27,24 +27,24 @@ $('document').ready(() => {
             slidesToScroll: 1,
             arrows: false,
             autoplay: true,
-
-          }
+          },
         },
-      ]
+      ],
     });
 
-    if(window.innerWidth > 1100) {
-      $(cls).on('afterChange', function(event, slick, currentSlide, nextSlide){
-        $(`${cls} .slick-slide`).removeClass('slick-active-center');
-        $(`${cls} .slick-active`).eq(2).addClass('slick-active-center');
-      }).trigger('afterChange');
+    if (window.innerWidth > 1100) {
+      $(cls)
+        .on('afterChange', function (event, slick, currentSlide, nextSlide) {
+          $(`${cls} .slick-slide`).removeClass('slick-active-center');
+          $(`${cls} .slick-active`).eq(2).addClass('slick-active-center');
+        })
+        .trigger('afterChange');
     }
-    
-  }
+  };
 
   createSlider('#experts-slider');
   createSlider('#experts-slider2');
-  
+
   $('a[data-slide]').click(function (e) {
     e.preventDefault();
 
@@ -97,9 +97,34 @@ $('document').ready(() => {
         breakpoint: 600,
         settings: {
           arrows: false,
-
-        }
+        },
       },
-    ]
+    ],
+  });
+
+  $('#top-companies-slider').slick({
+    slidesToShow: 3,
+    infinite: true,
+    arrows: true,
+    centerMode: false,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          // dots: true
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          autoplay: true,
+        },
+      },
+    ],
   });
 });
